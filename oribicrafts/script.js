@@ -38,7 +38,7 @@ function includeHTML() {
 	 */
 
 	// In NavBar section add logo image
-	document.logo.src = './images/logo.jpg';
+	document.logo.src = './images/logo.png';
 
 	// In menu section, the first section below navbar
 	document.querySelector('#company-title').innerHTML = 'ORIBI CRAFTS LTD';
@@ -58,7 +58,7 @@ function includeHTML() {
 	and the use of Rwandans in all operation`;
 
 	// middle section in about us
-	document.aboutimg.src = './images/sandal_about.jpg';
+	document.aboutimg.src = './images/oribi.jpg';
 	document.querySelector('#img-caption').innerHTML = ``;
 
 	// right section in about us
@@ -106,42 +106,42 @@ const serviceImages = [
 	{
 		image: './images/sandal.jpg',
 		title: 'Sandal',
-		text: 'Price: rwf12000',
+		text: 'Price: 12000 RWF',
 	},
 	{
 		image: './images/big_wallet.jpg',
 		title: 'Big Wallet',
-		text: 'Price: rwf8000',
+		text: 'Price: 8000 RWF',
 	},
 	{
 		image: './images/small_wallet.jpg',
 		title: 'Small Wallet',
-		text: 'Price: rwf6000',
+		text: 'Price: 6000 RWF',
 	},
 	{
 		image: './images/cardholder.jpg',
 		title: 'Card Holder',
-		text: 'Price: rwf3000',
+		text: 'Price: 3000 RWF',
 	},
 	{
 		image: './images/belt_with_design.jpg',
 		title: 'Belt with design',
-		text: 'Price: rwf8000',
+		text: 'Price: 8000 RWF',
 	},
 	{
 		image: './images/belt_without_design.jpg',
 		title: 'Belt without design',
-		text: 'Price: rwf6000',
+		text: 'Price: 6000 RWF',
 	},
 	{
 		image: './images/cable_organiser1.jpg',
 		title: 'Cable organiser',
-		text: 'Price: rwf5000',
+		text: 'Price: 5000 RWF',
 	},
 	{
 		image: './images/cable_organiser2.jpg',
 		title: 'Cable organiser',
-		text: 'Price: rwf5000',
+		text: 'Price: 5000 RWF',
 	},
 ];
 
