@@ -36,7 +36,7 @@ function includeHTML() {
 	 */
 
 	// In NavBar section add logo image
-	document.logo.src = './images/Logo.jpg';
+	document.logo.src = './images/LogoFF.png';
 
 	// In menu section, the first section below navbar
 	document.querySelector('#company-title').innerHTML = 'zoochi ltd';
@@ -53,25 +53,11 @@ function includeHTML() {
                   ubushobozi bw' umuntu kuva kumagi 50 kugeza kumagi ibihumbi 5000 dukorana n'amakoperative 
                   ndetse nabikorera kugiti cyabo`;
 
-	// Abous us section
-	// left section in about us
-	//document.querySelector(
-	//	'#mission'
-	//).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
-
 	// middle section in about us
 	document.aboutimg.src = './images/imishwi.png';
 	document.querySelector(
 		'#img-caption'
 	).innerHTML = `Dukora imashini zituraga amagi(automatic eggs incubator),Tugurisha imishwi,Dutanga amahugurwa kubijyanye nubworozi bwinkoko,Dufasha abantu gutegura umushinga wubworozi bwinkoko`;
-
-	// right section in about us
-	//document.querySelector(
-	//	'#visions'
-	//).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
-
-	// In team section
-	
 
 	// In contact us section
 	document.querySelector('#address').innerHTML = 'Kamonyi(office ),Atelier Mugakinjiro ka Gisozi';
@@ -93,7 +79,7 @@ let j = 0;
 const images = [
 	'./images/Automatic _eggs_ incubator.png',
 	'./images/imishwi.png',
-	'./images/poultry-farm1.jpg',
+	'./images/poultryfarm1.jpg',
 	'./images/poultry-farming.jpg',
 ];
 
@@ -103,8 +89,8 @@ const serviceImages = [
 		title: 'Dukora imashini zituraga amagi(automatic eggs incubator)',
 		text: 'Dukora imashini ziri mukigero gitandukanye  hakurukijwe ubushobozi umuntu afte kuva kumagi 50 kugeza kumagi ibihumbi 5000 dukorana na amakoperative ndetse nabikorera kugiti cyabo',
 	},
-	{ image: './images/imishwi.png', title: 'Tugurisha imishwi', text: 'ubafitiye imishwi yo kugura kandi kugiciro cyiza' },
-	{ image: './images/poultry-farm1.jpg', title: 'Dutanga amahugurwa kubijyanye nubworozi bwinkoko', text: 'Kubifuza kumenya ubworozi bwinkoko turabahagura bakunguka ubumenyi mukorora inkoko' },
+	{ image: './images/imishwi.png', title: 'Tugurisha imishwi', text: 'Tubafitiye imishwi yo kugura kandi kugiciro cyiza' },
+	{ image: './images/poultryfarm1.jpg', title: 'Dutanga amahugurwa kubijyanye nubworozi bwinkoko', text: 'Kubifuza kumenya ubworozi bwinkoko turabahagura bakunguka ubumenyi mukorora inkoko' },
 	{ image: './images/poultry-farming.jpg', title: 'Dufasha abantu gutegura umushinga wo korora inkoko', text: 'Kubashaka gutangira umushinga wo korora inkoko tubafasha mu gutegura umushinga wabo ' },
 
 ];
