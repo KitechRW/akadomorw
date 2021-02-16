@@ -2,10 +2,17 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  line-height: 1.5em;
+}
+
+.nav-link {
+  color: black
+}
+
 .intro-section {
   position: relative;
   padding: 0;
-  margin: 0;
 }
 
 .intro-section img {
@@ -62,19 +69,20 @@ html {
 
 .social-icons:hover {
   color: #fff;
-  background-color: black;
+  background-color: #7b4811;
 }
 
 /*================ END CONTACT US SECTION ==============================*/
 
 .common-bg-color {
-  background-color: #efe0ce;
+  background-color: #7b4811;
   color: black;
 }
 
 .header-size {
   font-size: 48px;
   font-weight: bold;
+  margin-top: 20px;
 }
 
 .subheader-size {
@@ -85,6 +93,16 @@ html {
 @media screen and (max-width: 760px) {
   .pm {
     width: 100% !important;
+  }
+
+  .intro-section img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .contact {
+    display: none;
   }
 
   .margin-top {
@@ -100,4 +118,13 @@ html {
     display: block;
     text-align: center;
   }
+}
+
+#about, #service, #contact, #team {
+  padding-top: 100px;
+  margin-top: 20px;
+}
+
+.row div {
+  margin-bottom: 20px;
 }

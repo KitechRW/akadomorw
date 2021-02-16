@@ -36,7 +36,7 @@ function includeHTML() {
 	 */
 
 	// In NavBar section add logo image
-	document.logo.src = './images/image.png';
+	document.logo.src = './images/logo.png';
 
 	// In menu section, the first section below navbar
 	document.querySelector('#company-title').innerHTML = 'Bukreative';
@@ -71,17 +71,6 @@ function includeHTML() {
 	document.querySelector('#first-name').innerHTML = 'Uwase Christiane';
 	document.querySelector('#first-position').innerHTML = 'Founder & CEO';
 
-	/* document.secondimg.src = './images/avatar.jpg';
-	document.querySelector('#second-name').innerHTML = 'William Haven';
-	document.querySelector('#second-position').innerHTML = 'Senior Engineer';
-
-	document.thirdimg.src = './images/avatar.jpg';
-	document.querySelector('#third-name').innerHTML = 'Marceline Dalosa';
-	document.querySelector('#third-position').innerHTML = 'Business Analyst';
-
-	document.fouthimg.src = './images/avatar.jpg';
-	document.querySelector('#fouth-name').innerHTML = 'Alicia Wes';
-	document.querySelector('#fouth-position').innerHTML = 'Sales Manager'; */
 
 	// In contact us section
 	document.querySelector('#address').innerHTML = 'Kigali Rwanda';
@@ -90,12 +79,10 @@ function includeHTML() {
 	document.querySelector('#phone').innerHTML = '+250788801095';
 
 	// Link to social media
-	document.querySelector('#facebook').href = 'http://www.facebook.com';
-	document.querySelector('#twitter').href = 'http://www.twitter.com';
+
 	document.querySelector('#instagram').href = 'https://www.instagram.com/bukreative/';
 	document.querySelector('#whatsapp').href = 'https://wa.me/+250788801095';
-	document.querySelector('#youtube').href = 'http://www.youtube.com';
-	document.querySelector('#linkedin').href = 'http://www.linkedin.com';
+
 }
 
 // images sliding
@@ -103,15 +90,9 @@ let i = 0;
 let j = 0;
 
 const images = [
-	'./images/logo1.jpg',
-	/* './images/cover.jpg',
-	'./images/s1.jpeg',
-	'./images/s2.jpeg',
-	'./images/s3.jpeg',
-	'./images/slide1.jpg',
-	'./images/slide2.jpg',
-	'./images/slide3.jpg',
-	'./images/slide4.jpg', */
+	'./images/dress_2.jpeg',
+	'./images/skirt_1.jpeg',
+	'./images/skirt_1.jpg',
 ];
 
 const serviceImages = [
@@ -128,44 +109,68 @@ const serviceImages = [
 ];
 
 function changeImages() {
-	document.slide.src = images[i];
-	document.imgservice.src = serviceImages[j].image;
-	document.querySelector('#title-service').innerHTML = serviceImages[j].title;
-	document.querySelector('#text-service').innerHTML = serviceImages[j].text;
+	function _(id) {return document.getElementById(id); }
+	if(_("slider_image") !== null) {
+		_("slider_image").setAttribute('src', images[i]);
+		_("imgservice").setAttribute('src', serviceImages[j].image);
+	
+		document.querySelector('#title-service').innerHTML = serviceImages[j].title;
+		document.querySelector('#text-service').innerHTML = serviceImages[j].text;
+	
+		if (i < images.length - 1) {
+			i++;
+		} else {
+			i = 0;
+		}
 
-	if (i < images.length - 1) {
-		i++;
-	} else if (j < serviceImages.length - 1) {
-		j++;
-	} else {
-		i = 0;
-		j = 0;
-	}
-	setTimeout('changeImages()', 10000);
-}
-window.onload = changeImages;
-
-function submitForm() {
-	var status = _("response_status");
-	status.innerHTML = "Please wait ...";
-	var formdata = new FormData();
-	formdata.append("email", _("email_from").value );
-	formdata.append("message", _("contact_message").value );
-	var ajax = new XMLHttpRequest();
-	ajax.open("POST", "send_email.php");
-	ajax.onreadystatechange = function () {
-		if(ajax.readyState == 4 && ajax.status == 200) {
-			if(ajax.responseText == "success") {
-				_("email_from").value = "";
-				_("contact_message").value = "";
-				_("response_status").innerHTML = 'Thank you! your message is sent';
-				setTimeout(function(){ _("response_status").innerHTML = ""; }, 3000);
-			} else {
-				_("response_status").innerHTML = ajax.responseText;
-				_("my_btn").disabled = false;
-				setTimeout(function(){ _("response_status").innerHTML = ""; }, 3000);
-			}
+		if(j < serviceImages.length - 1) {
+			j++
+		} else {
+			j = 0;
 		}
 	}
-	ajax.send(formdata);
+
+	setTimeout('changeImages()', 5000);
+}
+
+function click_hamburger() {
+	function _(id) {return document.getElementById(id); }
+	_("hamburger_btn").click();
+}
+
+function send_email() {
+	function _(id) {return document.getElementById(id); }
+	const x = _("slider_image");
+	console.log('change image function', x);
+	var status = _("response_status");
+	if(_("email_from").value !== "" && _("email_from").value.includes("@") && _("contact_message").value !== ""){
+		status.innerHTML = "Sending message ...";
+		var formdata = new FormData();
+		formdata.append("email", _("email_from").value );
+		formdata.append("message", _("contact_message").value );
+		var ajax = new XMLHttpRequest();
+		ajax.open("POST", "send_email.php");
+		ajax.onreadystatechange = function () {
+			if(ajax.readyState == 4 && ajax.status == 200) {
+				if(ajax.responseText == "success") {
+					_("email_from").value = "";
+					_("contact_message").value = "";
+					status.innerHTML = 'Thanks your message is sent';
+					setTimeout(function(){ status.innerHTML = ""; }, 5000);
+				} else {
+					status.innerHTML = ajax.responseText;
+					_("my_btn").disabled = false;
+					setTimeout(function(){ status.innerHTML = ""; }, 5000);
+				}
+			}
+		}
+		ajax.send(formdata);
+	}
+}
+
+let navbar = document.getElementById('navbar');
+if(navbar !== null) {
+	let heightNav = navbar.height();
+	let section = getElementById('intro-section');
+	section.css({marginTop: heightNav + 'px'});
 }
