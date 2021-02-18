@@ -82,6 +82,11 @@ html {
 	font-weight: bold;
 }
 
+#contact, #service, #team, #about {
+	padding-top: 60px;
+}
+
+
 @media screen and (max-width: 760px) {
 	.pm {
 		width: 100% !important;
@@ -95,13 +100,10 @@ html {
 		font-size: 12px;
 	}
 
-	.contact {
-		display: none;
-	}
-
 	.intro-section img {
 		width: 100%;
 		display: block;
+		object-fit: cover;
 	}
 
 	.header-size {
@@ -121,9 +123,5 @@ html {
 		margin: auto;
 		display: block;
 		text-align: center;
-	}
-
-	.img-m-h {
-		height: 300px;
 	}
 }
