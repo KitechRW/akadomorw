@@ -38,23 +38,19 @@ function includeHTML() {
 	 */
 
 	// In NavBar section add logo image
-	document.logo.src = './images/white_transparent.png';
+	document.logo.src = './images/nyurwe.png';
 
 	// In menu section, the first section below navbar
-	document.querySelector('#company-title').innerHTML = 'Company Name';
+	document.querySelector('#company-title').innerHTML = 'Nyurwe Mart';
 	document.querySelector('#company-desc').innerHTML = `
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio
-					enim quis neque nulla mollitia corporis soluta, fugiat perferendis
-					corrupti deleniti impedit magni molestiae delectus autem voluptatem
-					ducimus asperiores voluptatibus.`;
+	We make it easy to manage your monthly food budget through our unique package deliveries. You can subscribe for our weekly deliveries of fruits and/or vegetables, and a monthly package of food store that includes unperishable items in large quantity.`;
 
 	// In who we are section
 	document.querySelector(
 		'#status'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio
-					enim quis neque nulla mollitia corporis soluta, fugiat perferendis
-					corrupti deleniti impedit magni molestiae delectus autem voluptatem
-					ducimus asperiores voluptatibus.`;
+	).innerHTML = `
+	Nyurwe Mart is a retail company that distributes grocery and household essentials in Kigali. We deliver fresh produce, dry goods, cleaning materials, and household essentials to homes and businesses in Kigali.  
+ `;
 
 	// Abous us section
 	// left section in about us

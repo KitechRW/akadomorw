@@ -2,6 +2,11 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* body{
+	background-color: #f3f3f3;
+} */
+
+
 .intro-section {
 	position: relative;
 	padding: 0;
@@ -61,15 +66,19 @@ html {
 }
 
 .social-icons:hover {
-	color: #2a3380;
+	color: #333;
 	background-color: white;
 }
 
 /*================ END CONTACT US SECTION ==============================*/
 
 .common-bg-color {
-	background-color: #2a3380;
+	background-color: #333;
 	color: white;
+}
+.contact:hover {
+	background-color: white;
+	color: 333;
 }
 
 .header-size {
@@ -81,12 +90,36 @@ html {
 	font-size: 30px;
 	font-weight: bold;
 }
+.bg-light{
+	background-color: white;
+}
+/* ================= Navbar section ==================================== */
+
+.navbar{
+background-color: #fdfdfd;
+}
+.text-white {
+
+	color: #333!important;
+
+}
+.nav-item{
+	margin-right: 20px;
+}
+.navbar-dark .navbar-toggler-icon {
+    background-color: #333;
+    border-radius: 3px;
+    color: white;
+}
+
+
+
+/* ================= end Navbar section ==================================== */
 
 @media screen and (max-width: 760px) {
 	.pm {
 		width: 100% !important;
 	}
-
 	.intro-section {
 		height: auto;
 	}
