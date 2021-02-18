@@ -41,60 +41,57 @@ function includeHTML() {
 	document.logo.src = './images/white_transparent.png';
 
 	// In menu section, the first section below navbar
-	document.querySelector('#company-title').innerHTML = 'Company Name';
+	document.querySelector('#company-title').innerHTML = 'Inkingi modern farmers';
 	document.querySelector('#company-desc').innerHTML = `
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio
-					enim quis neque nulla mollitia corporis soluta, fugiat perferendis
-					corrupti deleniti impedit magni molestiae delectus autem voluptatem
-					ducimus asperiores voluptatibus.`;
+	                                            Its about farming , agri-business We achieve climate-smart agriculture objectives
+											    including improve food security through innovative policies.We improve farm productivity.`;
 
 	// In who we are section
 	document.querySelector(
 		'#status'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio
-					enim quis neque nulla mollitia corporis soluta, fugiat perferendis
-					corrupti deleniti impedit magni molestiae delectus autem voluptatem
-					ducimus asperiores voluptatibus.`;
+	).innerHTML = `We achieve climate-smart agriculture objectives including improve food security 
+	               through innovative policies.We improve farm productivity.`;
 
 	// Abous us section
 	// left section in about us
 	document.querySelector(
 		'#mission'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = `It’s a tech innovation that ensure global food security able to create relevant strategic market access and linkage to services`;
 
 	// middle section in about us
-	document.aboutimg.src = './images/cover.jpg';
+	document.aboutimg.src = './images/chxfrr1.jpg';
 	document.querySelector(
 		'#img-caption'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = `Its about farming , agri-business We achieve climate-smart agriculture objectives
+	               including improve food security through innovative policies.We improve farm productivity.`;
 
 	// right section in about us
 	document.querySelector(
 		'#visions'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = `Climate-smart agriculture is the only way to forward Producing more food to feed the world’s growing population`;
 
 	// In team section
 	document.firstimg.src = './images/avatar.jpg';
-	document.querySelector('#first-name').innerHTML = 'Granit Frank';
-	document.querySelector('#first-position').innerHTML = 'Co founder & CEO';
+	document.querySelector('#first-name').innerHTML = 'Uwase Faida Zoubeda';
+	document.querySelector('#first-position').innerHTML = 'CEO';
 
-	document.secondimg.src = './images/avatar.jpg';
-	document.querySelector('#second-name').innerHTML = 'William Haven';
-	document.querySelector('#second-position').innerHTML = 'Senior Engineer';
+	//document.secondimg.src = './images/avatar.jpg';
+	//document.querySelector('#second-name').innerHTML = 'William Haven';
+	//document.querySelector('#second-position').innerHTML = 'Senior Engineer';
 
-	document.thirdimg.src = './images/avatar.jpg';
-	document.querySelector('#third-name').innerHTML = 'Marceline Dalosa';
-	document.querySelector('#third-position').innerHTML = 'Business Analyst';
+	//document.thirdimg.src = './images/avatar.jpg';
+	//document.querySelector('#third-name').innerHTML = 'Marceline Dalosa';
+	//document.querySelector('#third-position').innerHTML = 'Business Analyst';
 
-	document.fouthimg.src = './images/avatar.jpg';
-	document.querySelector('#fouth-name').innerHTML = 'Alicia Wes';
-	document.querySelector('#fouth-position').innerHTML = 'Sales Manager';
+	//document.fouthimg.src = './images/avatar.jpg';
+	//document.querySelector('#fouth-name').innerHTML = 'Alicia Wes';
+	//document.querySelector('#fouth-position').innerHTML = 'Sales Manager';
 
 	// In contact us section
-	document.querySelector('#address').innerHTML = 'Kigali';
-	document.querySelector('#street').innerHTML = 'KN857';
-	document.querySelector('#email').innerHTML = 'info@template.com';
-	document.querySelector('#phone').innerHTML = '+250788374674';
+	document.querySelector('#address').innerHTML = 'Kigali, Kicukiro, Nyarugunga, Kamashashi';
+	//document.querySelector('#street').innerHTML = 'KN857';
+	document.querySelector('#email').innerHTML = 'inkingimodernfarmers@gmail.com';
+	document.querySelector('#phone').innerHTML = '+250785284378';
 
 	// Link to social media
 	document.querySelector('#facebook').href = 'http://www.facebook.com';
@@ -110,25 +107,22 @@ let i = 0;
 let j = 0;
 
 const images = [
-	'./images/view.jpg',
-	'./images/cover.jpg',
-	'./images/s1.jpeg',
-	'./images/s2.jpeg',
-	'./images/s3.jpeg',
-	'./images/slide1.jpg',
-	'./images/slide2.jpg',
-	'./images/slide3.jpg',
-	'./images/slide4.jpg',
+	'./images/chxfrr1.jpg',
+	'./images/chxfrr2.jpg',
+	'./images/urusenda.jpg',
+	'./images/inyaya.jpg',
+	
 ];
 
 const serviceImages = [
 	{
-		image: './images/s1.jpeg',
-		title: 'Title 1',
-		text: 'Outside view',
+		image: './images/chxfrr1.jpg',
+		title: 'Broccoli',
+		text: 'Broccoli is an edible green plant in the cabbage family whose large flowering head, stalk and small associated leaves are eaten as a vegetable. Broccoli is classified in the Italica cultivar group of the species Brassica oleracea.',
 	},
-	{ image: './images/s2.jpeg', title: 'Title 2', text: 'Swimming pool' },
-	{ image: './images/s3.jpeg', title: 'Title 3', text: 'For lunch' },
+	{ image: './images/chxfrr2.jpg', title: 'Cauliflower', text: 'Cauliflower is one of several vegetables in the species Brassica oleracea in the genus Brassica, which is in the Brassicaceae family. It is an annual plant that reproduces by seed. Typically, only the head is eaten – the edible white flesh sometimes called "curd".' },
+	{ image: './images/inyanya.jpg', title: 'Tomatoes', text: 'Tomatoes are loaded with a substance called lycopene. It gives them their bright red color and helps protect them from the ultraviolet rays of the sun. In much the same way, it can help protect your cells from damage. Tomatoes also have potassium, vitamins B and E, and other nutrients.' },
+	{ image: './images/urusenda.jpg', title: 'pepper', text: 'Peppers have a lot going for them. They are low in calories and are loaded with good nutrition. All varieties are excellent sources of vitamins A and C, potassium, folic acid, and fiber. Plus, the spicy ones liven up bland food, making it more satisfying.' },
 ];
 
 function changeImages() {
