@@ -69,23 +69,6 @@ function includeHTML() {
 		'#visions'
 	).innerHTML = `Our Vision. A vibrant and healthy community with access to healthy food through an affordable, member-owned, grocery store`;
 
-	// In team section
-	document.firstimg.src = './images/avatar.jpg';
-	document.querySelector('#first-name').innerHTML = 'Granit Frank';
-	document.querySelector('#first-position').innerHTML = 'Co founder & CEO';
-
-	document.secondimg.src = './images/avatar.jpg';
-	document.querySelector('#second-name').innerHTML = 'William Haven';
-	document.querySelector('#second-position').innerHTML = 'Senior Engineer';
-
-	document.thirdimg.src = './images/avatar.jpg';
-	document.querySelector('#third-name').innerHTML = 'Marceline Dalosa';
-	document.querySelector('#third-position').innerHTML = 'Business Analyst';
-
-	document.fouthimg.src = './images/avatar.jpg';
-	document.querySelector('#fouth-name').innerHTML = 'Alicia Wes';
-	document.querySelector('#fouth-position').innerHTML = 'Sales Manager';
-
 	// In contact us section
 	document.querySelector('#address').innerHTML = 'Kigali';
 	document.querySelector('#street').innerHTML = 'KG 213 ST';
