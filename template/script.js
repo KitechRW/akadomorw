@@ -56,18 +56,18 @@ function includeHTML() {
 	// left section in about us
 	document.querySelector(
 		'#mission'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = `To satisfy our partners and customers with a unique shopping experience offering quality, variety, price and service, based on the attention and commitment of our employees. “Committed workers, satisfied customers.`;
 
 	// middle section in about us
-	document.aboutimg.src = './images/cover.jpg';
+	document.aboutimg.src = './images/7.jpg';
 	document.querySelector(
 		'#img-caption'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = ` We are working constantly to go above and beyond customer expectations!`;
 
 	// right section in about us
 	document.querySelector(
 		'#visions'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = `Our Vision. A vibrant and healthy community with access to healthy food through an affordable, member-owned, grocery store`;
 
 	// In team section
 	document.firstimg.src = './images/avatar.jpg';
@@ -88,15 +88,15 @@ function includeHTML() {
 
 	// In contact us section
 	document.querySelector('#address').innerHTML = 'Kigali';
-	document.querySelector('#street').innerHTML = 'KN857';
-	document.querySelector('#email').innerHTML = 'info@template.com';
-	document.querySelector('#phone').innerHTML = '+250788374674';
+	document.querySelector('#street').innerHTML = 'KG 213 ST';
+	document.querySelector('#email').innerHTML = 'nyurwemart@gmail.com';
+	document.querySelector('#phone').innerHTML = '+250788748272';
 
 	// Link to social media
-	document.querySelector('#facebook').href = 'http://www.facebook.com';
+	document.querySelector('#facebook').href = 'https://www.facebook.com/105796641400126/posts/121394863173637/?substory_index=0&app=fbl';
 	document.querySelector('#twitter').href = 'http://www.twitter.com';
-	document.querySelector('#instagram').href = 'http://www.instagram.com';
-	document.querySelector('#whatsapp').href = 'https://wa.me/+250788384757';
+	document.querySelector('#instagram').href = 'https://www.instagram.com/p/CKZaXr9Hi8v/?igshid=18563hzvho3xr';
+	document.querySelector('#whatsapp').href = 'https://wa.me/+250782877770';
 	document.querySelector('#youtube').href = 'http://www.youtube.com';
 	document.querySelector('#linkedin').href = 'http://www.linkedin.com';
 }
@@ -106,25 +106,25 @@ let i = 0;
 let j = 0;
 
 const images = [
-	'./images/view.jpg',
-	'./images/cover.jpg',
-	'./images/s1.jpeg',
-	'./images/s2.jpeg',
-	'./images/s3.jpeg',
-	'./images/slide1.jpg',
-	'./images/slide2.jpg',
-	'./images/slide3.jpg',
-	'./images/slide4.jpg',
+	'./images/1.jpg',
+	'./images/2.jpg',
+	'./images/3.jpg',
+	'./images/4.jpg',
+	'./images/5.jpg',
+	'./images/6.jpg',
+	'./images/8.jpg',
+	'./images/9.jpg',
+	'./images/7.jpg',
 ];
 
 const serviceImages = [
 	{
-		image: './images/s1.jpeg',
-		title: 'Title 1',
-		text: 'Outside view',
+		image: './images/7.jpg',
+		title: 'Fresh fruits',
+		text: 'Mangos, watermellon, pineapples, lemons, ripe banana (small and big), apples, tomato tree, passion fruits, grapes, strawberries, oranges, papaya, mandarin oranges,avocados, etc...',
 	},
-	{ image: './images/s2.jpeg', title: 'Title 2', text: 'Swimming pool' },
-	{ image: './images/s3.jpeg', title: 'Title 3', text: 'For lunch' },
+	{ image: './images/3.jpg', title: 'Fresh fruits', text: 'Mangos, watermellon, pineapples, lemons' },
+	{ image: './images/8.jpg', title: 'Sprays', text: 'For home use' },
 ];
 
 function changeImages() {
