@@ -98,10 +98,13 @@ html {
 .navbar{
 background-color: #fdfdfd;
 }
-.text-white {
+.footer {
 
 	color: #fff!important;
 
+}
+.text-white{
+	color: #333!important;
 }
 .navbar-nav{
 	margin-right: 20px;
