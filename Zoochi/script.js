@@ -36,7 +36,7 @@ function includeHTML() {
 	 */
 
 	// In NavBar section add logo image
-	document.logo.src = './images/LogoFF.png';
+	document.logo.src = './images/logo_new.png';
 
 	// In menu section, the first section below navbar
 	document.querySelector('#company-title').innerHTML = 'zoochi ltd';
