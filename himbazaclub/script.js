@@ -36,52 +36,50 @@ function includeHTML() {
 	 */
 
 	// In NavBar section add logo image
-	document.logo.src = './images/logo.png';
+	document.logo.src = './images/logo_himbaza.png';
 
 	// In menu section, the first section below navbar
-	document.querySelector('#company-title').innerHTML = 'Bukreative';
-	document.querySelector('#company-desc').innerHTML = `We are specialized in fashion, we ensure that you look good and feel good for every occasion!`;
+	document.querySelector('#company-title').innerHTML = 'Himbaza Club';
+	document.querySelector('#company-desc').innerHTML = `Himbaza Club drummers are the young talented men sataterd in 2008 in Burundi but now we are based in Rwanda since 2015`;
 
 	// In who we are section
 	document.querySelector(
 		'#status'
 	).innerHTML = `
-	We all have something things we are passionate about. But Pursuing those things isn't all rainbows and colours because let’s be real! <br />We already are busy with life itself,crowding our minds with our needs at the moment and finding survival, making the idea of working on personal projects is more of a luxury we can not afford. Reasons like" it’s just not the right time"or "I don't have enough capital or investment"…if you are looking for reasons, you will lose count.
-	<br />I personally went through all of it until my will  to suppress the optimistic side of me worn out and I couldn’t help not doing what I like, what I do effortlessly, what I love to see others do, which is making sure people look good.`;
+	We play traditional sacred drums originally from Burundi,we offer a spectacular experience with strong rythyms,dance ,accrobaties,carrying drums of weight up to 50kgs on heads,and jumping higher than you could ever imagime`;
 
 	// Abous us section
 	// left section in about us
 	document.querySelector(
 		'#mission'
-	).innerHTML = `At Bukreative, we are aware of the differences in people's personalities,the diversity of their mentalities about fashion and we are ready to yet explore these choices keeping our own touch upon each of them.`;
+	).innerHTML = `Entertaining using Culture.`;
 
 	// middle section in about us
-	document.aboutimg.src = './images/logo1.jpg';
+	document.aboutimg.src = './images/logo_himbaza.png';
 	document.querySelector(
 		'#img-caption'
-	).innerHTML = `Bukreative exists for the love of fashion. We believe in empowering individuality`;
+	).innerHTML = `<b> Dance like no one is watching! </b>`;
 
 	// right section in about us
 	document.querySelector(
 		'#visions'
-	).innerHTML = `Ensure people look good fashion wise`;
+	).innerHTML = ` Bringing happiness to everyone using a strong heritage of cultural dance!`;
 
 	// In team section
-	document.firstimg.src = './images/avatar.jpg';
-	document.querySelector('#first-name').innerHTML = 'Uwase Christiane';
-	document.querySelector('#first-position').innerHTML = 'Founder & CEO';
+	
 
 
 	// In contact us section
-	document.querySelector('#address').innerHTML = 'Kigali Rwanda';
+	document.querySelector('#address').innerHTML = 'Kimironko Gasabo, Rwanda';
 	// document.querySelector('#street').innerHTML = 'KN 2 Avenue';
-	document.querySelector('#email').innerHTML = 'bukreative@gmail.com';
-	document.querySelector('#phone').innerHTML = '+250788801095';
+	document.querySelector('#email').innerHTML = 'clubhimbaza@gmail.com';
+	document.querySelector('#phone').innerHTML = '+2507807500521';
 
 	// Link to social media
-
-	document.querySelector('#instagram').href = 'https://www.instagram.com/bukreative/';
-	document.querySelector('#whatsapp').href = 'https://wa.me/+250788801095';
+    document.querySelector('#facebook').href = 'https://www.facebook.com/Himbaza-Club-1750416818584080';
+	document.querySelector('#instagram').href = 'https://www.instagram.com/himbazaclub/';
+	document.querySelector('#whatsapp').href = 'https://wa.me/+2507807500521';
+	document.querySelector('#youtube').href = 'https://www.youtube.com/channel/UC3LUXCUkP45YCVgskodZkgQ';
 
 }
 
@@ -90,22 +88,22 @@ let i = 0;
 let j = 0;
 
 const images = [
-	'./images/dress_2.jpeg',
-	'./images/skirt_1.jpeg',
-	'./images/skirt_1.jpg',
+	'./images/s3.jpg',
+	'./images/s5.jpg',
+	'./images/s7.jpg',
 ];
 
 const serviceImages = [
-	{ image: './images/dress_1.jpg', title: 'LOOK GOOD, FEEL GOOD', text: 'If you like looking great and you struggle with your outfit choices, I would like to help you bring out the best of your wardrobe while letting you express yourself in the best way' },
+	{ image: './images/view.jpg', title: 'DRUMMING IN ACTION', text: 'We bring out that strong beat out of the strong drum heritage from Burundi.' },
 	{
-		image: './images/earrings_1.jpg',
-		title: 'ICONIC EARRINGS',
-		text: 'We have a wide range of creatively designed earrings made from Rwanda',
+		image: './images/s1.jpg',
+		title: 'SKYING WITH THE DANCE',
+		text: 'We conquer your presence, and take you to our world of endless drama.',
 	},
-	{ image: './images/earrings_2.jpg', title: 'GREAT EARRINGS', text: 'A wide range of creatively designed earrings made from Rwanda' },
-	{ image: './images/earrings_3.jpg', title: 'MORE EARRINGS', text: 'Good quality earrings designed and made from Rwanda' },
-	{ image: './images/skirt_1.jpg', title: 'FASHIONABLE DRESS', text: 'Hire me and I’ll spend a significant time with you helping you discover what goes with your body type and the vast range of styles you would certainly rock' },
-	{ image: './images/dress_2.jpg', title: 'MORE DRESSES', text: 'A perfect fit' },
+	{ image: './images/s2.jpg', title: 'STUNNING MOVES', text: 'Strong men performing what they can do best' },
+	{ image: './images/s4.jpg', title: 'FULL TEAM AT COMPETETIONS', text: 'We represented Rwanda at the East Africa Got Talent competitions in Kenya in year 2019.' },
+	{ image: './images/s5.jpg', title: 'ENERGY WE DELIVER', text: 'We are the living proof of true cultural dancers' },
+	{ image: './images/s7.jpg', title: 'THE PASSION IN OUR DANCE', text: 'We give you full energy results because we do it with full love.' },
 ];
 
 function changeImages() {
@@ -130,7 +128,7 @@ function changeImages() {
 		}
 	}
 
-	setTimeout('changeImages()', 5000);
+	setTimeout('changeImages()', 3000);
 }
 
 function click_hamburger() {

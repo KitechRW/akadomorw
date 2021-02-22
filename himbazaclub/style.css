@@ -19,6 +19,7 @@ body {
   width: 100%;
   height: 600px;
   display: block;
+  object-fit: fill;
 }
 
 .intro-section::after {
@@ -69,13 +70,13 @@ body {
 
 .social-icons:hover {
   color: #fff;
-  background-color: #7b4811;
+  background-color: #6E2C00;
 }
 
 /*================ END CONTACT US SECTION ==============================*/
 
 .common-bg-color {
-  background-color: #7b4811;
+  background-color: #6E2C00;
   color: black;
 }
 
