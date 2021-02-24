@@ -43,7 +43,7 @@ function includeHTML() {
 	// In menu section, the first section below navbar
 	document.querySelector('#company-title').innerHTML = 'THE BEST CARS DEALERSHIP Ltd';
 	document.querySelector('#company-desc').innerHTML = `
-	" We Sale motor vehicles, Go further and experience the beauty of thousands hills "`;
+	We Sale motor vehicles, Go further and experience the beauty of thousands hills`;
 
 	// In who we are section
 	document.querySelector(
@@ -91,7 +91,7 @@ const images = [
 	'./images/s1.jpg',
 	'./images/view.png',
 	'./images/s2.png',
-	'./images/s3.PNG',
+	'./images/s3.png',
 	
 ];
 

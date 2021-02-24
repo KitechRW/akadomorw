@@ -61,14 +61,13 @@ html {
 }
 
 .social-icons:hover {
-	color: #051B1B ;
-	background-color: white;
+	color: rgba(231, 231, 233, 0.294);
 }
 
 /*================ END CONTACT US SECTION ==============================*/
 
 .common-bg-color {
-	background-color: #051B1B ;
+	background-color: #051B1B;
 	color: white;
 }
 
@@ -81,6 +80,11 @@ html {
 	font-size: 30px;
 	font-weight: bold;
 }
+
+#contact, #service, #team, #about {
+	padding-top: 60px;
+}
+
 
 @media screen and (max-width: 760px) {
 	.pm {
@@ -95,13 +99,10 @@ html {
 		font-size: 12px;
 	}
 
-	.contact {
-		display: none;
-	}
-
 	.intro-section img {
 		width: 100%;
 		display: block;
+		object-fit: cover;
 	}
 
 	.header-size {
@@ -121,9 +122,5 @@ html {
 		margin: auto;
 		display: block;
 		text-align: center;
-	}
-
-	.img-m-h {
-		height: 300px;
 	}
 }
