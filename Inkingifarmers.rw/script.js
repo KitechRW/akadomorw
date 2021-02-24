@@ -38,7 +38,7 @@ function includeHTML() {
 	 */
 
 	// In NavBar section add logo image
-	document.logo.src = './images/white_transparent.png';
+	// document.logo.src = './images/white_transparent.png';
 
 	// In menu section, the first section below navbar
 	document.querySelector('#company-title').innerHTML = 'Inkingi modern farmers';
@@ -71,9 +71,9 @@ function includeHTML() {
 	).innerHTML = `Climate-smart agriculture is the only way to forward Producing more food to feed the world’s growing population`;
 
 	// In team section
-	document.firstimg.src = './images/avatar.jpg';
-	document.querySelector('#first-name').innerHTML = 'Uwase Faida Zoubeda';
-	document.querySelector('#first-position').innerHTML = 'CEO';
+	// document.firstimg.src = './images/avatar.jpg';
+	// document.querySelector('#first-name').innerHTML = 'Uwase Faida Zoubeda';
+	// document.querySelector('#first-position').innerHTML = 'CEO';
 
 	//document.secondimg.src = './images/avatar.jpg';
 	//document.querySelector('#second-name').innerHTML = 'William Haven';
@@ -109,8 +109,9 @@ let j = 0;
 const images = [
 	'./images/chxfrr1.jpg',
 	'./images/chxfrr2.jpg',
+	'./images/inyanya.jpg',
 	'./images/urusenda.jpg',
-	'./images/inyaya.jpg',
+	
 	
 ];
 
