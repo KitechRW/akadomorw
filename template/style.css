@@ -81,6 +81,10 @@ html {
 	color: 333;
 }
 
+#service, #about {
+	padding-top: 60px
+}
+
 .header-size {
 	font-size: 48px;
 	font-weight: bold;
@@ -99,9 +103,13 @@ html {
 background-color: #fdfdfd;
 }
 .footer {
-
+background-color: #333;
 	color: #fff!important;
 
+}
+
+.footer-section {
+	background-color: #333;
 }
 .text-white{
 	color: #333!important;
