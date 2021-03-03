@@ -73,7 +73,7 @@ function includeHTML() {
 	document.querySelector('#address').innerHTML = 'Kimironko Gasabo, Rwanda';
 	// document.querySelector('#street').innerHTML = 'KN 2 Avenue';
 	document.querySelector('#email').innerHTML = 'clubhimbaza@gmail.com';
-	document.querySelector('#phone').innerHTML = '+2507807500521';
+	document.querySelector('#phone').innerHTML = '+250 787 500 521 or +250 788 932 446';
 
 	// Link to social media
     document.querySelector('#facebook').href = 'https://www.facebook.com/Himbaza-Club-1750416818584080';
@@ -85,7 +85,6 @@ function includeHTML() {
 
 // images sliding
 let i = 0;
-let j = 0;
 
 const images = [
 	'./images/s3.jpg',
@@ -93,38 +92,15 @@ const images = [
 	'./images/s7.jpg',
 ];
 
-const serviceImages = [
-	{ image: './images/view.jpg', title: 'DRUMMING IN ACTION', text: 'We bring out that strong beat out of the strong drum heritage from Burundi.' },
-	{
-		image: './images/s1.jpg',
-		title: 'SKYING WITH THE DANCE',
-		text: 'We conquer your presence, and take you to our world of endless drama.',
-	},
-	{ image: './images/s2.jpg', title: 'STUNNING MOVES', text: 'Strong men performing what they can do best' },
-	{ image: './images/s4.jpg', title: 'FULL TEAM AT COMPETETIONS', text: 'We represented Rwanda at the East Africa Got Talent competitions in Kenya in year 2019.' },
-	{ image: './images/s5.jpg', title: 'ENERGY WE DELIVER', text: 'We are the living proof of true cultural dancers' },
-	{ image: './images/s7.jpg', title: 'THE PASSION IN OUR DANCE', text: 'We give you full energy results because we do it with full love.' },
-];
-
 function changeImages() {
 	function _(id) {return document.getElementById(id); }
 	if(_("slider_image") !== null) {
 		_("slider_image").setAttribute('src', images[i]);
-		_("imgservice").setAttribute('src', serviceImages[j].image);
-	
-		document.querySelector('#title-service').innerHTML = serviceImages[j].title;
-		document.querySelector('#text-service').innerHTML = serviceImages[j].text;
 	
 		if (i < images.length - 1) {
 			i++;
 		} else {
 			i = 0;
-		}
-
-		if(j < serviceImages.length - 1) {
-			j++
-		} else {
-			j = 0;
 		}
 	}
 

@@ -17,9 +17,7 @@ body {
 
 .intro-section img {
   width: 100%;
-  height: 600px;
   display: block;
-  object-fit: fill;
 }
 
 .intro-section::after {
@@ -29,10 +27,9 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0)
-    linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.6) 100%)
-    repeat 0 0;
+  background: rgba(255, 255, 255, 0)
+  linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.6) 100%)
+  repeat 0 0;
   z-index: 1;
 }
 
@@ -42,7 +39,7 @@ body {
   width: 100%;
   color: #fff;
   left: 0;
-  bottom: 0;
+  top: 50%;
   padding: 1em;
   font-weight: 500;
   z-index: 2;
@@ -65,19 +62,18 @@ body {
 
 .social-icons {
   font-size: 2em;
-  color: black;
+  color: #fff;
 }
 
 .social-icons:hover {
-  color: #fff;
-  background-color: #6E2C00;
+  color: #000;
 }
 
 /*================ END CONTACT US SECTION ==============================*/
 
 .common-bg-color {
-  background-color: #6E2C00;
-  color: black;
+  background-color: rgb(2, 78, 2);
+  color: #fff;
 }
 
 .header-size {
@@ -91,20 +87,39 @@ body {
   font-weight: bold;
 }
 
+#company-desc {
+  width: 50%;
+}
+
 @media screen and (max-width: 760px) {
-  .pm {
-    width: 100% !important;
+
+
+	.intro-section {
+    margin-top:80px;
+		height: auto;
   }
 
-  .intro-section img {
+  #company-desc {
+    font-size: 12px;
     width: 100%;
-    height: auto;
-    display: block;
+	}
+  
+	.intro-section img {
+		width: 100%;
+		display: block;
+		object-fit: cover;
+  }
+  .read-text {
+    top: 5%;
   }
 
   .contact {
     display: none;
   }
+  .header-size {
+		padding-top: 20px;
+		font-size: 16px;
+	}
 
   .margin-top {
     margin-top: 15x;
