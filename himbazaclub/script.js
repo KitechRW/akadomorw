@@ -73,7 +73,7 @@ function includeHTML() {
 	document.querySelector('#address').innerHTML = 'Kimironko Gasabo, Rwanda';
 	// document.querySelector('#street').innerHTML = 'KN 2 Avenue';
 	document.querySelector('#email').innerHTML = 'clubhimbaza@gmail.com';
-	document.querySelector('#phone').innerHTML = '+250 787 500 521 or +250 788 932 446';
+	document.querySelector('#phone').innerHTML = '+250 787 500 521 or +250 786 900 566';
 
 	// Link to social media
     document.querySelector('#facebook').href = 'https://www.facebook.com/Himbaza-Club-1750416818584080';
