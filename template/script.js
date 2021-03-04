@@ -110,13 +110,7 @@ let j = 0;
 const images = [
 	'./images/view.jpg',
 	'./images/cover.jpg',
-	'./images/s1.jpeg',
-	'./images/s2.jpeg',
-	'./images/s3.jpeg',
-	'./images/slide1.jpg',
-	'./images/slide2.jpg',
-	'./images/slide3.jpg',
-	'./images/slide4.jpg',
+
 ];
 
 const serviceImages = [
@@ -127,6 +121,7 @@ const serviceImages = [
 	},
 	{ image: './images/s2.jpeg', title: 'Title 2', text: 'Swimming pool' },
 	{ image: './images/s3.jpeg', title: 'Title 3', text: 'For lunch' },
+	
 ];
 
 function changeImages() {

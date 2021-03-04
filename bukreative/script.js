@@ -36,7 +36,7 @@ function includeHTML() {
 	 */
 
 	// In NavBar section add logo image
-	document.logo.src = './images/logo.png';
+	document.logo.src = './images/logo1.jpg';
 
 	// In menu section, the first section below navbar
 	document.querySelector('#company-title').innerHTML = 'Bukreative';
@@ -53,18 +53,18 @@ function includeHTML() {
 	// left section in about us
 	document.querySelector(
 		'#mission'
-	).innerHTML = `At Bukreative, we are aware of the differences in people's personalities,the diversity of their mentalities about fashion and we are ready to yet explore these choices keeping our own touch upon each of them.`;
+	).innerHTML = `At Bukreative, we are aware of the differences in people's personalities,
+	the diversity of their mentalities about fashion and we are ready to yet explore these choices keeping our own touch upon each of them.
+
+	`;
 
 	// middle section in about us
-	document.aboutimg.src = './images/logo1.jpg';
-	document.querySelector(
-		'#img-caption'
-	).innerHTML = `Bukreative exists for the love of fashion. We believe in empowering individuality`;
+	
 
 	// right section in about us
 	document.querySelector(
 		'#visions'
-	).innerHTML = `Ensure people look good fashion wise`;
+	).innerHTML = `Look good whenever and wherever.`;
 
 	// In team section
 	document.firstimg.src = './images/avatar.jpg';
@@ -91,46 +91,42 @@ let j = 0;
 
 const images = [
 	'./images/dress_2.jpeg',
-	'./images/skirt_1.jpeg',
-	'./images/skirt_1.jpg',
 ];
 
 const serviceImages = [
-	{ image: './images/dress_1.jpg', title: 'LOOK GOOD, FEEL GOOD', text: 'If you like looking great and you struggle with your outfit choices, I would like to help you bring out the best of your wardrobe while letting you express yourself in the best way' },
 	{
 		image: './images/earrings_1.jpg',
-		title: 'ICONIC EARRINGS',
+		
+		title: 'ICONIC EARINGS',
 		text: 'We have a wide range of creatively designed earrings made from Rwanda',
+		footer: 'FRW 2000'
 	},
-	{ image: './images/earrings_2.jpg', title: 'GREAT EARRINGS', text: 'A wide range of creatively designed earrings made from Rwanda' },
-	{ image: './images/earrings_3.jpg', title: 'MORE EARRINGS', text: 'Good quality earrings designed and made from Rwanda' },
-	{ image: './images/skirt_1.jpg', title: 'FASHIONABLE DRESS', text: 'Hire me and I’ll spend a significant time with you helping you discover what goes with your body type and the vast range of styles you would certainly rock' },
-	{ image: './images/dress_2.jpg', title: 'MORE DRESSES', text: 'A perfect fit' },
+
+	{
+		image: './images/earrings_2.jpg',
+		title: 'GREAT EARRINGS',
+		text: 'A wide range of creatively designed earrings made from Rwanda',
+		footer: 'FRW 5000'
+	},
+	{ image: './images/earrings_3.jpg', title: 'SPECIAL EARRRINGS', text: 'We have other special earring for you on better price!! ',footer: 'FRW 3500' },
 ];
 
 function changeImages() {
-	function _(id) {return document.getElementById(id); }
-	if(_("slider_image") !== null) {
-		_("slider_image").setAttribute('src', images[i]);
-		_("imgservice").setAttribute('src', serviceImages[j].image);
-	
-		document.querySelector('#title-service').innerHTML = serviceImages[j].title;
-		document.querySelector('#text-service').innerHTML = serviceImages[j].text;
-	
-		if (i < images.length - 1) {
-			i++;
-		} else {
-			i = 0;
-		}
+	document.slide.src = images[i];
+	document.imgservice.src = serviceImages[j].image;
+	document.querySelector('#title-service').innerHTML = serviceImages[j].title;
+	document.querySelector('#text-service').innerHTML = serviceImages[j].text;
+	document.querySelector('#text-footer').innerHTML = serviceImages[j].footer;
 
-		if(j < serviceImages.length - 1) {
-			j++
-		} else {
-			j = 0;
-		}
+	if (i < images.length - 1) {
+		i++;
+	} else if (j < serviceImages.length - 1) {
+		j++;
+	} else {
+		i = 0;
+		j = 0;
 	}
-
-	setTimeout('changeImages()', 5000);
+	setTimeout('changeImages()', 2000);
 }
 
 function click_hamburger() {
