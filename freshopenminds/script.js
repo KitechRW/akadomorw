@@ -1,4 +1,6 @@
-function _(id) {return document.getElementById(id); }
+function _(id) {
+	return document.getElementById(id);
+}
 // Include a file
 function includeHTML() {
 	let z, i, elmnt, file, xhttp;
@@ -21,7 +23,7 @@ function includeHTML() {
 					}
 					/*remove the attribute, and call this function once more:*/
 					elmnt.removeAttribute('w3-include-html');
-					includeHTML();
+					      includeHTML();
 				}
 			};
 			xhttp.open('GET', file, true);
@@ -41,59 +43,70 @@ function includeHTML() {
 	// In menu section, the first section below navbar
 	document.querySelector('#company-title').innerHTML = 'Fresh Open Minds';
 	document.querySelector('#company-desc').innerHTML = `
-														 Fresh Open Minds provides an integrated health consulting by creating an appropriate approach to advance integrated care and health outcomes. 
-														 Community mental health clinics that strengthen services for those who most need them. CMHCs are a new provider type in health sector. Fresh Open Minds’ Trauma-informed, 
-														 Resilience-oriented Care (TIROC) training and consulting practice  help organizations in primary care, behavioral health, schools, community services, managed care and government settings 
-														 achieve the quadruple aim of enhancing the patient experience, improving population health, reducing costs and enhancing the work life of their staff`; 
+	                                                     Fresh Open Minds provides an integrated health consulting by creating an appropriate approach to advance integrated care and health outcomes. 
+	                                                     Community mental health clinics that strengthen services for those who most need them..`;
 
 	// In who we are section
 	document.querySelector(
 		'#status'
 	).innerHTML = `In addition Fresh Open Minds’ Mobile Crisis Response Team (MRCT) provides professional,
-			       same-day intervention for people who are experiencing mental health crises. The team visits clients 
-				   and their families to prevent acute psychiatric crises from becoming emergencies that require law enforcement
-				   involvement or involuntary hospitalization. MCRT includes licensed mental health clinicians, community and 
-				   family support workers and a family nurse practitioner employed by Fresh open Minds (FOM). 
-				   The goal is to de-escalate the crisis and safely connect the client with care and mental health resources.
-	              Call 078224864
-	              If there is immediate danger, call 0788224864 immediately. For example:
-	               (In the act of committing suicide, Physically assaulting someone, 
-	               Threatening someone with a weapon, Appears to have a medical emergency)`;
+	              same-day intervention for people who are experiencing mental health crises. The team visits clients 
+	              and their families to prevent acute psychiatric crises from becoming emergencies that require law enforcement
+	              family support workers and a family nurse practitioner employed by Fresh open Minds (FOM). 
+	              The goal is to de-escalate the crisis and safely connect the client with care and mental health resources.
+                  Call 078224864 If there is immediate danger, call 0788224864 immediately. For example:
+	             (In the act of committing suicide, Physically assaulting someone, 
+	             Threatening someone with a weapon, Appears to have a medical emergency)`;
 
 	// Abous us section
 	// left section in about us
-	//document.querySelector(
-	//	'#mission'
-	//).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	document.querySelector(
+		'#mission'
+	).innerHTML = `Our expert team of thought leaders guides organizations as they implement multi-faceted initiatives focused on the foundation of TIROC to apply 
+	               complex strategies that impact social needs and access to care. Through a lens of cultural humility, diversity, equity and inclusion.`;
 
 	// middle section in about us
 	document.aboutimg.src = './images/mental_health_education.png';
-	document.querySelector(
-		'#img-caption'
-	).innerHTML = `Our expert team of thought leaders guides organizations as they implement multi-faceted initiatives focused on the foundation of TIROC to apply 
-				  complex strategies that impact social needs and access to care. Through a lens of cultural humility, diversity, equity and inclusion, we help organizations 
-				  build a data-informed workforce, organizational and community resilience, trauma-informed supervision and leadership and eliminate gaps in implementation of organizational, 
-				  systemic culture change. `;
+	// document.querySelector(
+	// 	'#img-caption'
+	// ).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
 
 	// right section in about us
-	//document.querySelector(
-	//	'#visions'
-	//).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	document.querySelector(
+		'#visions'
+	).innerHTML = `we help organizations build a data-informed workforce, organizational and community resilience, trauma-informed supervision and leadership and eliminate gaps in implementation of organizational, 
+	               systemic culture change.`;
 
 	// In team section
-	
+	// document.firstimg.src = './images/avatar.jpg';
+	// document.querySelector('#first-name').innerHTML = 'Granit Frank';
+	// document.querySelector('#first-position').innerHTML = 'Co founder & CEO';
+
+	// document.secondimg.src = './images/avatar.jpg';
+	// document.querySelector('#second-name').innerHTML = 'William Haven';
+	// document.querySelector('#second-position').innerHTML = 'Senior Engineer';
+
+	// document.thirdimg.src = './images/avatar.jpg';
+	// document.querySelector('#third-name').innerHTML = 'Marceline Dalosa';
+	// document.querySelector('#third-position').innerHTML = 'Business Analyst';
+
+	// document.fouthimg.src = './images/avatar.jpg';
+	// document.querySelector('#fouth-name').innerHTML = 'Alicia Wes';
+	// document.querySelector('#fouth-position').innerHTML = 'Sales Manager';
 
 	// In contact us section
-	document.querySelector('#address').innerHTML ='Gwiza House, Isibo 5,  Norvege, Kigali -Rwanda';
+	document.querySelector('#address').innerHTML = 'Gwiza House, Isibo 5,  Norvege, Kigali -Rwanda';
 	//document.querySelector('#street').innerHTML = 'KN857';
 	document.querySelector('#email').innerHTML = 'gafajepi@gmail.com';
 	document.querySelector('#phone').innerHTML = '+250788224864';
 
 	// Link to social media
-	
-//	document.querySelector('#twitter').href = 'https://twitter.com/LtdZoochi/status/1355863863070257154?s=03';
-//document.querySelector('#instagram').href = 'https://www.instagram.com/p/CKtM7ZLpiqq/?igshid=13uh51uu7swqq';
-	
+	document.querySelector('#facebook').href = 'http://www.facebook.com';
+	document.querySelector('#twitter').href = 'http://www.twitter.com';
+	document.querySelector('#instagram').href = 'http://www.instagram.com';
+	document.querySelector('#whatsapp').href = 'https://wa.me/+250788384757';
+	document.querySelector('#youtube').href = 'http://www.youtube.com';
+	document.querySelector('#linkedin').href = 'http://www.linkedin.com';
 }
 
 // images sliding
@@ -101,63 +114,87 @@ let i = 0;
 let j = 0;
 
 const images = [
-	
-	
 	'./images/phone_consultation.jpg',
 	
 ];
 
-const serviceImages = [
-	{
-		image: './images/mental_health_education1.png',
-		title: 'Integrated health consulting',
-		text: 'The Fresh open minds’ wide array of training and consultation fosters effectiveness, efficiency and sustainable integrated services to improve the overall health and wellness of individuals who are at risk for and living with chronic health conditions including mental health concerns and addictions. Our team of consultants have expertise in organizational readiness, integrated care models, workforce and clinical practice, health and wellness, and financing and sustainability. We will partner with you to create a customized approach to advance integrated care and health outcomes',
-	},
-	{ image: './images/resilience.png', title: 'Community mental health clinics', text: 'Certified Mental Health Clinics (CMHCs)  revolutionize mental health care and strengthen services for those who most need them. CMHCs are a new provider type in health sector – organizations defined not just by the comprehensive array of services they provide' },
-	{ image: './images/trauma1.png', title: 'Trauma informed, resilience oriented care',text:'The Fresh Open Minds’ Trauma-informed, Resilience-oriented Care (TIROC) training and consulting practice  help organizations in primary care, behavioral health, schools, community services, managed care and government settings achieve the quadruple aim of enhancing the patient experience, improving population health, reducing costs and enhancing the work life of their staff' },
+     const serviceImages = [
 	
-
-];
+		{
+			image: './images/mental_health_education1.png',
+			title: 'Integrated health consulting',
+			text: 'The Fresh open minds’ wide array of training and consultation fosters effectiveness, efficiency and sustainable integrated services to improve the overall health and wellness of individuals who are at risk for and living with chronic health conditions including mental health concerns and addictions. ',
+		},
+		{ image: './images/resilience.png', title: 'Community mental health clinics', text: 'Certified Mental Health Clinics (CMHCs)  revolutionize mental health care and strengthen services for those who most need them. CMHCs are a new provider type in health sector – organizations defined not just by the comprehensive array of services they provide' },
+		{ image: './images/trauma1.png', title: 'Trauma informed, resilience oriented care',text:'The Fresh Open Minds’ Trauma-informed, Resilience-oriented Care (TIROC) training and consulting practice  help organizations in primary care, behavioral health, schools, community services, managed care and government settings achieve the quadruple aim of enhancing the patient experience, improving population health, reducing costs and enhancing the work life of their staff' },
+  ];
 
 function changeImages() {
-	document.slide.src = images[i];
-	document.imgservice.src = serviceImages[j].image;
-	document.querySelector('#title-service').innerHTML = serviceImages[j].title;
-	document.querySelector('#text-service').innerHTML = serviceImages[j].text;
-
-	if (i < images.length - 1) {
-		i++;
-	} else if (j < serviceImages.length - 1) {
-		j++;
-	} else {
-		i = 0;
-		j = 0;
+	function _(id) {
+		return document.getElementById(id);
 	}
-	setTimeout('changeImages()', 3000);
-}
-window.onload = changeImages;
 
-function submitForm() {
-	var status = _("response_status");
-	status.innerHTML = "Please wait ...";
-	var formdata = new FormData();
-	formdata.append("email", _("email_from").value );
-	formdata.append("message", _("contact_message").value );
-	var ajax = new XMLHttpRequest();
-	ajax.open("POST", "send_email.php");
-	ajax.onreadystatechange = function () {
-		if(ajax.readyState == 4 && ajax.status == 200) {
-			if(ajax.responseText == "success") {
-				_("email_from").value = "";
-				_("contact_message").value = "";
-				_("response_status").innerHTML = 'Thank you! your message is sent';
-				setTimeout(function(){ _("response_status").innerHTML = ""; }, 3000);
-			} else {
-				_("response_status").innerHTML = ajax.responseText;
-				_("my_btn").disabled = false;
-				setTimeout(function(){ _("response_status").innerHTML = ""; }, 3000);
-			}
+	if (_('slider_image') !== null) {
+		_('slider_image').setAttribute('src', images[i]);
+		_('imgservice').setAttribute('src', serviceImages[j].image);
+
+		document.querySelector('#title-service').innerHTML = serviceImages[j].title;
+		document.querySelector('#text-service').innerHTML = serviceImages[j].text;
+
+		if (i < images.length - 1) {
+			i++;
+		} else {
+			i = 0;
+		}
+
+		if (j < serviceImages.length - 1) {
+			j++;
+		} else {
+			j = 0;
 		}
 	}
-	ajax.send(formdata);
+
+	setTimeout('changeImages()', 5000);
+}
+
+function click_hamburger() {
+	document.getElementById('hamburger_btn').click();
+}
+
+function send_email() {
+	function _(id) {
+		return document.getElementById(id);
+	}
+	var status = _('response_status');
+	if (
+		_('email_from').value !== '' &&
+		_('email_from').value.includes('@') &&
+		_('contact_message').value !== ''
+	) {
+		status.innerHTML = 'Sending message ...';
+		var formdata = new FormData();
+		formdata.append('email', _('email_from').value);
+		formdata.append('message', _('contact_message').value);
+		var ajax = new XMLHttpRequest();
+		ajax.open('POST', 'send_email.php');
+		ajax.onreadystatechange = function () {
+			if (ajax.readyState == 4 && ajax.status == 200) {
+				if (ajax.responseText == 'success') {
+					_('email_from').value = '';
+					_('contact_message').value = '';
+					status.innerHTML = 'Thanks your message is sent';
+					setTimeout(function () {
+						status.innerHTML = '';
+					}, 5000);
+				} else {
+					status.innerHTML = ajax.responseText;
+					_('my_btn').disabled = false;
+					setTimeout(function () {
+						status.innerHTML = '';
+					}, 5000);
+				}
+			}
+		};
+		ajax.send(formdata);
+	}
 }
