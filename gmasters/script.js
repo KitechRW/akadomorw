@@ -43,66 +43,46 @@ function includeHTML() {
 	// In menu section, the first section below navbar
 	document.querySelector('#company-title').innerHTML = 'GmastersLTD ';
 	document.querySelector('#company-desc').innerHTML = `
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio
-					enim quis neque nulla mollitia corporis soluta, fugiat perferendis
-					corrupti deleniti impedit magni molestiae delectus autem voluptatem
-					ducimus asperiores voluptatibus.`;
+	 OUR CORE VALUES are what drive our company.`;
 
 	// In who we are section
 	document.querySelector(
 		'#status'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio
-					enim quis neque nulla mollitia corporis soluta, fugiat perferendis
-					corrupti deleniti impedit magni molestiae delectus autem voluptatem
-					ducimus asperiores voluptatibus.`;
+	).innerHTML = `OUR MISSION is to provide Distinguished Hospitality through the four key components of our Mission Statement: Service, Relationships, Careers, and Results. OUR COMMON VISION is to be recognized as a highly respected industry leader in hotel development and hotel management. OUR CORE VALUES are what drive our company.`;
 
 	// Abous us section
 	// left section in about us
 	document.querySelector(
 		'#mission'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = `OUR MISSION is to provide Distinguished Hospitality through the four key components of 
+	our Mission Statement: Service, Relationships, Careers, and Results.`;
 
 	// middle section in about us
-	document.aboutimg.src = './images/cover.jpg';
-	document.querySelector(
-		'#img-caption'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	document.aboutimg.src = './images/Safaris_(3).jpg';
+	// document.querySelector(
+	// 	'#img-caption'
+	// ).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
 
 	// right section in about us
 	document.querySelector(
 		'#visions'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = `OUR COMMON VISION is to be recognized as a highly respected industry leader in hotel development and hotel management.`;
 
 	// In team section
 	document.firstimg.src = './images/avatar.jpg';
-	document.querySelector('#first-name').innerHTML = 'Granit Frank';
+	document.querySelector('#first-name').innerHTML = 'Opacha George William';
 	document.querySelector('#first-position').innerHTML = 'Co founder & CEO';
-
-	document.secondimg.src = './images/avatar.jpg';
-	document.querySelector('#second-name').innerHTML = 'William Haven';
-	document.querySelector('#second-position').innerHTML = 'Senior Engineer';
-
-	document.thirdimg.src = './images/avatar.jpg';
-	document.querySelector('#third-name').innerHTML = 'Marceline Dalosa';
-	document.querySelector('#third-position').innerHTML = 'Business Analyst';
-
-	document.fouthimg.src = './images/avatar.jpg';
-	document.querySelector('#fouth-name').innerHTML = 'Alicia Wes';
-	document.querySelector('#fouth-position').innerHTML = 'Sales Manager';
-
 	// In contact us section
-	document.querySelector('#address').innerHTML = 'Kigali';
-	document.querySelector('#street').innerHTML = 'KN857';
-	document.querySelector('#email').innerHTML = 'info@template.com';
-	document.querySelector('#phone').innerHTML = '+250788374674';
+	document.querySelector('#address').innerHTML = 'Kigali-Remera - gisementi';
+	// document.querySelector('#street').innerHTML = 'KN857';
+	document.querySelector('#email').innerHTML = 'gwmrwanda@gmail.com';
+	document.querySelector('#phone').innerHTML = '+250782871129';
 
 	// Link to social media
-	document.querySelector('#facebook').href = 'http://www.facebook.com';
-	document.querySelector('#twitter').href = 'http://www.twitter.com';
-	document.querySelector('#instagram').href = 'http://www.instagram.com';
-	document.querySelector('#whatsapp').href = 'https://wa.me/+250788384757';
-	document.querySelector('#youtube').href = 'http://www.youtube.com';
-	document.querySelector('#linkedin').href = 'http://www.linkedin.com';
+	document.querySelector('#facebook').href = 'https://web.facebook.com/GmastersLTD';
+	document.querySelector('#instagram').href = 'https://www.instagram.com/gmasters.travel/?hl=en';
+	document.querySelector('#whatsapp').href = 'https://wa.me/+250735051561';
+	
 }
 
 // images sliding
@@ -110,26 +90,13 @@ let i = 0;
 let j = 0;
 
 const images = [
-	'./images/view.jpg',
-	'./images/cover.jpg',
-	'./images/s1.jpeg',
-	'./images/s2.jpeg',
-	'./images/s3.jpeg',
-	'./images/slide1.jpg',
-	'./images/slide2.jpg',
-	'./images/slide3.jpg',
-	'./images/slide4.jpg',
+	'./images/city_tour.jpg',
+	'./images/Car_Hire_(1).jpg',
+	'./images/safari1.jpg',
+	'./images/safari.jpg',
+	'./images/chuttersnap-OB7ol699Iww-unsplash.jpg'
 ];
 
-const serviceImages = [
-	{
-		image: './images/s1.jpeg',
-		title: 'Title 1',
-		text: 'Outside view',
-	},
-	{ image: './images/s2.jpeg', title: 'Title 2', text: 'Swimming pool' },
-	{ image: './images/s3.jpeg', title: 'Title 3', text: 'For lunch' },
-];
 
 function changeImages() {
 	function _(id) {
