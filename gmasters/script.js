@@ -58,7 +58,7 @@ function includeHTML() {
 	our Mission Statement: Service, Relationships, Careers, and Results.`;
 
 	// middle section in about us
-	document.aboutimg.src = './images/Safaris_(3).jpg';
+	document.aboutimg.src = './images/city_tour.jpg';
 	// document.querySelector(
 	// 	'#img-caption'
 	// ).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
@@ -68,10 +68,10 @@ function includeHTML() {
 		'#visions'
 	).innerHTML = `OUR COMMON VISION is to be recognized as a highly respected industry leader in hotel development and hotel management.`;
 
-	// In team section
-	document.firstimg.src = './images/avatar.jpg';
-	document.querySelector('#first-name').innerHTML = 'Opacha George William';
-	document.querySelector('#first-position').innerHTML = 'Co founder & CEO';
+	// In team section	
+	document.thirdimg.src = './images/avatar.jpg';
+	document.querySelector('#third-name').innerHTML = 'Opacha George William';
+	document.querySelector('#third-position').innerHTML = 'Co founder & CEO';
 	// In contact us section
 	document.querySelector('#address').innerHTML = 'Kigali-Remera - gisementi';
 	// document.querySelector('#street').innerHTML = 'KN857';

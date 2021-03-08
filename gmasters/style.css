@@ -127,21 +127,4 @@ html {
     text-align: center;
   }
 }
-@media screen and (max-width:768px) {
-  /* img {
-      width:100%;
-  }
-  .container {
-      max-width:100%;
-      width: 100%;
-  } */
-  .col-md-3{
-      width:100%;
-      float:left;
-      margin:0;
-  }
-  }
-  .card {
-    height: 100%;
-    display: flex;
-}
+
