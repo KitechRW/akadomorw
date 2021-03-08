@@ -90,29 +90,28 @@ let i = 0;
 let j = 0;
 
 const images = [
-	'./images/dress_2.jpeg',
+	'./images/earrings_2.jpg',
 ];
 
 const serviceImages = [
 	{
 		image: './images/earrings_1.jpg',
 		
-		title: 'ICONIC EARINGS',
+		title: 'EARINGS',
 		text: 'We have a wide range of creatively designed earrings made from Rwanda',
 		footer: 'FRW 2000'
 	},
 
 	{
 		image: './images/earrings_2.jpg',
-		title: 'GREAT EARRINGS',
+		title: 'EARRINGS',
 		text: 'A wide range of creatively designed earrings made from Rwanda',
 		footer: 'FRW 5000'
 	},
-	{ image: './images/earrings_3.jpg', title: 'SPECIAL EARRRINGS', text: 'We have other special earring for you on better price!! ',footer: 'FRW 3500' },
+	{ image: './images/earrings_3.jpg', title: 'EARRRINGS', text: 'We have other special earring for you on better price!! ',footer: 'FRW 3500' },
 ];
 
 function changeImages() {
-	document.slide.src = images[i];
 	document.imgservice.src = serviceImages[j].image;
 	document.querySelector('#title-service').innerHTML = serviceImages[j].title;
 	document.querySelector('#text-service').innerHTML = serviceImages[j].text;

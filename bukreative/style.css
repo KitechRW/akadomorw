@@ -28,9 +28,8 @@ body {
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
   background: rgba(0, 0, 0, 0)
-    linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(0, 0, 0, 0.6) 100%)
+    linear-gradient(to bottom, rgba(0, 0, 0, 0) 0px, rgba(255, 255, 255, 0.6) 100%)
     repeat 0 0;
   z-index: 1;
 }
@@ -64,19 +63,18 @@ body {
 
 .social-icons {
   font-size: 2em;
-  color: black;
+  color: #fff;
 }
 
 .social-icons:hover {
-  color: #fff;
-  background-color: #7b4811;
+  color: #000;
 }
 
 /*================ END CONTACT US SECTION ==============================*/
 
 .common-bg-color {
   background-color: #442A19;
-  color: black;
+  color: white;
 }
 
 .header-size {
@@ -93,6 +91,10 @@ body {
 @media screen and (max-width: 760px) {
   .pm {
     width: 100% !important;
+  }
+
+  .intro-section {
+    padding-top: 60px;
   }
 
   .intro-section img {
@@ -125,11 +127,9 @@ body {
   margin-top: 20px;
 }
 #about {
-  background-color: #7b4811;
+  background-color: #fff;
 }
-.row div {
-  margin-bottom: 20px;
-}
+
 
 /*================ beginning==============================*/
 @media (min-width: 768px) {
@@ -214,20 +214,29 @@ body {
   color: black;
 }
 
+.cart-title, .card-text {
+  color: black;
+}
+
 #text-service{
 color: #fff;
+text-align: center;
 }
 #text-footer{
-  background-color: azure;
   width: 100%;
-
-}
-#text-footer{
+  text-align: center;
   color:black;
 }
-#title-service{
-  text-align: center;
+
+.team_center {
+  display: inline-block;
+  width: 300px;
+  margin: 0 auto;
 }
 
+.card-footer {
+  padding: 0;
+  border: none;
+}
 /*================end of mycss ==============================*/
 
