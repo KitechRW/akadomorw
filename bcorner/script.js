@@ -41,7 +41,7 @@ function includeHTML() {
 	document.logo.src = './images/white_transparent.png';
 
 	// In menu section, the first section below navbar
-	document.querySelector('#company-title').innerHTML = 'Company Name';
+	document.querySelector('#company-title').innerHTML = 'Bcorner';
 	document.querySelector('#company-desc').innerHTML = `
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio
 					enim quis neque nulla mollitia corporis soluta, fugiat perferendis
