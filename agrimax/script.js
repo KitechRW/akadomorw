@@ -38,63 +38,40 @@ function includeHTML() {
 	 */
 
 	// In NavBar section add logo image
-	document.logo.src = './images/white_transparent.png';
+	document.logo.src = './images/logo.png';
 
 	// In menu section, the first section below navbar
-	document.querySelector('#company-title').innerHTML = 'Company Name';
+	document.querySelector('#company-title').innerHTML = 'AGRIMAX CONSULTING ';
 	document.querySelector('#company-desc').innerHTML = `
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio
-					enim quis neque nulla mollitia corporis soluta, fugiat perferendis
-					corrupti deleniti impedit magni molestiae delectus autem voluptatem
-					ducimus asperiores voluptatibus.`;
+	BUILDING, OPTIMIZING AND DEVELOPING COMPETITIVE AGRI-FOOD CHAIN.`;
 
 	// In who we are section
 	document.querySelector(
-		'#status'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio
-					enim quis neque nulla mollitia corporis soluta, fugiat perferendis
-					corrupti deleniti impedit magni molestiae delectus autem voluptatem
-					ducimus asperiores voluptatibus.`;
-
+		'#x'
+	).innerHTML = `Agrimax is a specialized consultancy firm offering knowledge and expertise for sustainable agri-food chain. We provide targeted agribusiness solutions and expert advise in Rwanda and Africa.`
 	// Abous us section
 	// left section in about us
 	document.querySelector(
 		'#mission'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = `Provide a premier standards services in agribusinesses and technical excellence for success. We value honesty, committing to the highest standards of professionalism, trust and diligence.`;
 
 	// middle section in about us
-	document.aboutimg.src = './images/cover.jpg';
-	document.querySelector(
-		'#img-caption'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
-
+	
 	// right section in about us
 	document.querySelector(
 		'#visions'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = `We are committed to support agribusinesses realize their full potential along the value chain and to be a global partner in development of agri-food industry.`;
 
 	// In team section
 	document.firstimg.src = './images/avatar.jpg';
-	document.querySelector('#first-name').innerHTML = 'Granit Frank';
-	document.querySelector('#first-position').innerHTML = 'Co founder & CEO';
-
-	document.secondimg.src = './images/avatar.jpg';
-	document.querySelector('#second-name').innerHTML = 'William Haven';
-	document.querySelector('#second-position').innerHTML = 'Senior Engineer';
-
-	document.thirdimg.src = './images/avatar.jpg';
-	document.querySelector('#third-name').innerHTML = 'Marceline Dalosa';
-	document.querySelector('#third-position').innerHTML = 'Business Analyst';
-
-	document.fouthimg.src = './images/avatar.jpg';
-	document.querySelector('#fouth-name').innerHTML = 'Alicia Wes';
-	document.querySelector('#fouth-position').innerHTML = 'Sales Manager';
+	document.querySelector('#first-name').innerHTML = 'Emmanuel Gasigwa';
+	document.querySelector('#first-position').innerHTML = 'Founder & CEO ';
 
 	// In contact us section
 	document.querySelector('#address').innerHTML = 'Kigali';
 	document.querySelector('#street').innerHTML = 'KN857';
-	document.querySelector('#email').innerHTML = 'info@template.com';
-	document.querySelector('#phone').innerHTML = '+250788374674';
+	document.querySelector('#email').innerHTML = 'info@agrimax.rw';
+	document.querySelector('#phone').innerHTML = '+250788225525';
 
 	// Link to social media
 	document.querySelector('#facebook').href = 'http://www.facebook.com';
@@ -110,25 +87,18 @@ let i = 0;
 let j = 0;
 
 const images = [
-	'./images/view.jpg',
-	'./images/cover.jpg',
-	'./images/s1.jpeg',
-	'./images/s2.jpeg',
-	'./images/s3.jpeg',
-	'./images/slide1.jpg',
-	'./images/slide2.jpg',
-	'./images/slide3.jpg',
-	'./images/slide4.jpg',
+	'./images/gfood.png',
+		
 ];
 
 const serviceImages = [
 	{
-		image: './images/s1.jpeg',
+		image: '../images/pm.png',
 		title: 'Title 1',
 		text: 'Outside view',
 	},
-	{ image: './images/s2.jpeg', title: 'Title 2', text: 'Swimming pool' },
-	{ image: './images/s3.jpeg', title: 'Title 3', text: 'For lunch' },
+	{ image: './images/gfood.png', title: 'Title 2', text: 'Swimming pool' },
+	{ image: './images/gfood.png', title: 'Title 3', text: 'For lunch' },
 ];
 
 function changeImages() {
@@ -156,7 +126,7 @@ function changeImages() {
 		}
 	}
 
-	setTimeout('changeImages()', 5000);
+	setTimeout('changeImages()', 500);
 }
 
 function click_hamburger() {

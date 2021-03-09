@@ -61,15 +61,16 @@ html {
 }
 
 .social-icons:hover {
-	color: #2a3380;
+	color: #615b3e;
 	background-color: white;
 }
 
 /*================ END CONTACT US SECTION ==============================*/
 
 .common-bg-color {
-	background-color: #2a3380;
-	color: white;
+	background-color: green;
+	color: white
+;
 }
 
 .header-size {
