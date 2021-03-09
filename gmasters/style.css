@@ -62,14 +62,13 @@ html {
 
 .social-icons:hover {
   color: #2a3380;
-  background-color: white;
 }
 
 /*================ END CONTACT US SECTION ==============================*/
 
 .common-bg-color {
-  background-color: #f1f1f7;
-  color: rgb(8, 8, 8);
+  background-color: #929292;
+  color:#fff;
 }
 
 .header-size {
@@ -80,6 +79,10 @@ html {
 .subheader-size {
   font-size: 30px;
   font-weight: bold;
+}
+
+.team-member {
+  margin: 0 auto;
 }
 
 #contact,

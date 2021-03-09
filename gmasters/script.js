@@ -79,8 +79,10 @@ function includeHTML() {
 	document.querySelector('#phone').innerHTML = '+250782871129';
 
 	// Link to social media
+	document.querySelector('#twitter').href = 'https://twitter.com/Gmaters2';
+	document.querySelector('#linkedin').href = 'https://linkedin.com/in/g-maters-098b74207';
 	document.querySelector('#facebook').href = 'https://web.facebook.com/GmastersLTD';
-	document.querySelector('#instagram').href = 'https://www.instagram.com/gmasters.travel/?hl=en';
+	document.querySelector('#instagram').href = 'https://www.instagram.com/gmastersltd';
 	document.querySelector('#whatsapp').href = 'https://wa.me/+250735051561';
 	
 }
