@@ -38,23 +38,25 @@ function includeHTML() {
 	 */
 
 	// In NavBar section add logo image
-	document.logo.src = './images/white_transparent.png';
+	document.logo.src = './images/LOGO.jpg';
 
 	// In menu section, the first section below navbar
-	document.querySelector('#company-title').innerHTML = 'Bcorner';
-	document.querySelector('#company-desc').innerHTML = `
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio
-					enim quis neque nulla mollitia corporis soluta, fugiat perferendis
-					corrupti deleniti impedit magni molestiae delectus autem voluptatem
-					ducimus asperiores voluptatibus.`;
+	document.querySelector('#company-title').innerHTML = `Banana's Corner`;
+	document.querySelector('#company-desc').innerHTML = `Banana's Corner is a firm that
+	 offers an online service that you can access
+	 from your place and products which you can order online to reach you in time.
+	 Online services offered by BC include Training on how to make/prepare delicious and healthy desserts/salads with arts for your family and/ or your customers.
+
+When you prefer to order from Banana's Corner, you will enjoy all sorts of fresh fruits found in our country (Bananas, Pineapple, papaya, guava, oranges, passion fruits, lemons,....) and all kinds of fresh vegetables (Tomatoes, garlic, onions, cucumber, peas, carrots, eggplants).
+
+We serve you 24/7 by ordering online your choice or find us at the shop. Follow our social media platforms and share with us your thoughts and feedback. #EatFresh. #FeelFresh`;
 
 	// In who we are section
 	document.querySelector(
 		'#status'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio
-					enim quis neque nulla mollitia corporis soluta, fugiat perferendis
-					corrupti deleniti impedit magni molestiae delectus autem voluptatem
-					ducimus asperiores voluptatibus.`;
+	).innerHTML = `Banana’s Corner (BC) created a Shop inside that distributes fresh fruits ready for consumption and nutritious vegetables across the city of Kigali. BC is mostly known for the good quality of Long&Large bananas called "Gros Michel" which are sweet and rich in healthy nutrients.
+
+From the year 2012, Banana’s Corner has impacted positively the lives of a lot of people, in various ways, through the provision of nutritious fruits and vegetables and employment opportunities. `;
 
 	// Abous us section
 	// left section in about us
@@ -63,46 +65,46 @@ function includeHTML() {
 	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
 
 	// middle section in about us
-	document.aboutimg.src = './images/cover.jpg';
+	document.aboutimg.src = './images/all.jpg';
 	document.querySelector(
 		'#img-caption'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = `Bananas, Pineapple, papaya, guava, oranges, passion fruits, lemons,.... and all kinds of fresh vegetables Tomatoes, garlic, onions, cucumber, peas, carrots, eggplants.`;
 
 	// right section in about us
 	document.querySelector(
 		'#visions'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = `Banana's Corner envisions training the community as a whole on the health benefits from consuming fruits and vegetables of all kinds that can help to reduce the risk of many adverse health conditions`;
 
 	// In team section
 	document.firstimg.src = './images/avatar.jpg';
-	document.querySelector('#first-name').innerHTML = 'Granit Frank';
-	document.querySelector('#first-position').innerHTML = 'Co founder & CEO';
+	document.querySelector('#first-name').innerHTML = 'Jean Bosco Abayisenga';
+	document.querySelector('#first-position').innerHTML = `CEO&Founder of Banana's Corner`;
 
 	document.secondimg.src = './images/avatar.jpg';
-	document.querySelector('#second-name').innerHTML = 'William Haven';
-	document.querySelector('#second-position').innerHTML = 'Senior Engineer';
+	document.querySelector('#second-name').innerHTML = 'Flora Murerwa';
+	document.querySelector('#second-position').innerHTML = ' Operation and Production Manager';
 
 	document.thirdimg.src = './images/avatar.jpg';
-	document.querySelector('#third-name').innerHTML = 'Marceline Dalosa';
-	document.querySelector('#third-position').innerHTML = 'Business Analyst';
+	document.querySelector('#third-name').innerHTML = 'Marie Josee Mukandayisenga';
+	document.querySelector('#third-position').innerHTML = 'Communication Manager';
 
 	document.fouthimg.src = './images/avatar.jpg';
-	document.querySelector('#fouth-name').innerHTML = 'Alicia Wes';
-	document.querySelector('#fouth-position').innerHTML = 'Sales Manager';
+	document.querySelector('#fouth-name').innerHTML = 'Anselme Aheza';
+	document.querySelector('#fouth-position').innerHTML = ' Marketing and Branding Manager';
 
 	// In contact us section
-	document.querySelector('#address').innerHTML = 'Kigali';
-	document.querySelector('#street').innerHTML = 'KN857';
-	document.querySelector('#email').innerHTML = 'info@template.com';
-	document.querySelector('#phone').innerHTML = '+250788374674';
+	document.querySelector('#address').innerHTML = 'Kigali City ,Gasabo District ,Remera Sector ,Rukiri I Agashyitsi';
+	document.querySelector('#street').innerHTML = 'KG 169 St Opposite APAPER Primary School';
+	document.querySelector('#email').innerHTML = 'bananacorner1@gmail.com';
+	document.querySelector('#phone').innerHTML = '+250783347410';
 
 	// Link to social media
-	document.querySelector('#facebook').href = 'http://www.facebook.com';
-	document.querySelector('#twitter').href = 'http://www.twitter.com';
-	document.querySelector('#instagram').href = 'http://www.instagram.com';
-	document.querySelector('#whatsapp').href = 'https://wa.me/+250788384757';
-	document.querySelector('#youtube').href = 'http://www.youtube.com';
-	document.querySelector('#linkedin').href = 'http://www.linkedin.com';
+	document.querySelector('#facebook').href = 'https://www.facebook.com/sweetbananascorner';
+	document.querySelector('#twitter').href = 'https://twitter.com/BananasCorner1';
+	document.querySelector('#instagram').href = 'https://www.instagram.com/bananas_corner';
+	document.querySelector('#whatsapp').href = 'https://wa.me/+250783347410';
+	document.querySelector('#youtube').href = 'https://www.youtube.com/channel/UCZCsMj_t771Jt5uufh4lcKg';
+	document.querySelector('#linkedin').href = 'https://www.linkedin.com/in/banana-s-corner-a28101206/';
 }
 
 // images sliding
@@ -110,7 +112,7 @@ let i = 0;
 let j = 0;
 
 const images = [
-	'./images/view.jpg',
+	'./images/all.jpg',
 	'./images/cover.jpg',
 	'./images/s1.jpeg',
 	'./images/s2.jpeg',

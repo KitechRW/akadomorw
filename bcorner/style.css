@@ -68,7 +68,7 @@ html {
 /*================ END CONTACT US SECTION ==============================*/
 
 .common-bg-color {
-	background-color: #2a3380;
+	background-color: #1b7c13;
 	color: white;
 }
 
@@ -124,4 +124,15 @@ html {
 		display: block;
 		text-align: center;
 	}
+}
+@media screen and (max-width:768px) {
+	.card-img-top{
+	  width:100%;
+	  height:auto;
+	}
+.col-md-4{
+    width:100%;
+    float:left;
+    margin:0;
+}
 }
