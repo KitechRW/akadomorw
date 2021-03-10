@@ -38,35 +38,29 @@ function includeHTML() {
 	 */
 
 	// In NavBar section add logo image
-	document.logo.src = './images/white_transparent.png';
+	document.logo.src = './images/logo.jpg';
 
 	// In menu section, the first section below navbar
-	document.querySelector('#company-title').innerHTML = 'Company Name';
+	document.querySelector('#company-title').innerHTML = 'Lucky Electronics store';
 	document.querySelector('#company-desc').innerHTML = `
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio
-					enim quis neque nulla mollitia corporis soluta, fugiat perferendis
-					corrupti deleniti impedit magni molestiae delectus autem voluptatem
-					ducimus asperiores voluptatibus.`;
+	we sell electronic and computer devices for someone who want it , we sell new and second hand items. We also repair those damaged electronics device and we buy it for who want to sell it.`;
 
 	// In who we are section
 	document.querySelector(
 		'#status'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque optio
-					enim quis neque nulla mollitia corporis soluta, fugiat perferendis
-					corrupti deleniti impedit magni molestiae delectus autem voluptatem
-					ducimus asperiores voluptatibus.`;
+	).innerHTML = `We buy , sell and repair IT and electronic devices.`;
 
 	// Abous us section
 	// left section in about us
 	document.querySelector(
 		'#mission'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = `Provide good quality electronic items.`;
 
 	// middle section in about us
-	document.aboutimg.src = './images/cover.jpg';
+	document.aboutimg.src = './images/logo.jpg';
 	document.querySelector(
 		'#img-caption'
-	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
+	).innerHTML = `<b>Here to serve you. </b> `;
 
 	// right section in about us
 	document.querySelector(
@@ -74,35 +68,19 @@ function includeHTML() {
 	).innerHTML = `Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero magni asperiores velit!`;
 
 	// In team section
-	document.firstimg.src = './images/avatar.jpg';
-	document.querySelector('#first-name').innerHTML = 'Granit Frank';
-	document.querySelector('#first-position').innerHTML = 'Co founder & CEO';
-
-	document.secondimg.src = './images/avatar.jpg';
-	document.querySelector('#second-name').innerHTML = 'William Haven';
-	document.querySelector('#second-position').innerHTML = 'Senior Engineer';
-
-	document.thirdimg.src = './images/avatar.jpg';
-	document.querySelector('#third-name').innerHTML = 'Marceline Dalosa';
-	document.querySelector('#third-position').innerHTML = 'Business Analyst';
-
-	document.fouthimg.src = './images/avatar.jpg';
-	document.querySelector('#fouth-name').innerHTML = 'Alicia Wes';
-	document.querySelector('#fouth-position').innerHTML = 'Sales Manager';
-
+	
 	// In contact us section
-	document.querySelector('#address').innerHTML = 'Kigali';
-	document.querySelector('#street').innerHTML = 'KN857';
-	document.querySelector('#email').innerHTML = 'info@template.com';
-	document.querySelector('#phone').innerHTML = '+250788374674';
+	document.querySelector('#address').innerHTML = 'Huye, Rwanda';
+	//document.querySelector('#street').innerHTML = 'KN857';
+	document.querySelector('#email').innerHTML = 'manifelix99@gmail.com';
+	document.querySelector('#phone').innerHTML = '+250788839461';
 
 	// Link to social media
-	document.querySelector('#facebook').href = 'http://www.facebook.com';
-	document.querySelector('#twitter').href = 'http://www.twitter.com';
-	document.querySelector('#instagram').href = 'http://www.instagram.com';
-	document.querySelector('#whatsapp').href = 'https://wa.me/+250788384757';
-	document.querySelector('#youtube').href = 'http://www.youtube.com';
-	document.querySelector('#linkedin').href = 'http://www.linkedin.com';
+	document.querySelector('#facebook').href = 'https://www.facebook.com/imanirakora.felix';
+	document.querySelector('#twitter').href = 'https://mobile.twitter.com/Luckyfe43859927';
+	document.querySelector('#instagram').href = 'https://www.instagram.com/imanirakora/';
+	document.querySelector('#whatsapp').href = 'https://wa.me/+250788839461';
+	
 }
 
 // images sliding
@@ -112,23 +90,18 @@ let j = 0;
 const images = [
 	'./images/view.jpg',
 	'./images/cover.jpg',
-	'./images/s1.jpeg',
-	'./images/s2.jpeg',
-	'./images/s3.jpeg',
-	'./images/slide1.jpg',
-	'./images/slide2.jpg',
-	'./images/slide3.jpg',
-	'./images/slide4.jpg',
+	'./images/s1.jpg',
+	
 ];
 
 const serviceImages = [
 	{
-		image: './images/s1.jpeg',
-		title: 'Title 1',
-		text: 'Outside view',
+		image: './images/s4.jpg',
+		title: 'Electronic devices',
+		text: 'We sell electronic devices to our clients',
 	},
-	{ image: './images/s2.jpeg', title: 'Title 2', text: 'Swimming pool' },
-	{ image: './images/s3.jpeg', title: 'Title 3', text: 'For lunch' },
+	{ image: './images/cover.jpg', title: 'Repair centre & install apps', text: 'We repair your devices such as computers, phones and radios. We also provide application installation services.' },
+	{ image: './images/s2.jpg', title: 'Spare parts', text: 'We provide and sell good quality electronic spare parts.' },
 ];
 
 function changeImages() {
