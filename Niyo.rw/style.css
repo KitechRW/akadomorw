@@ -10,7 +10,7 @@ html {
 
 .intro-section img {
 	width: 100%;
-	height:620px;
+	height: 600px;
 	display: block;
 }
 
@@ -61,14 +61,14 @@ html {
 }
 
 .social-icons:hover {
-	color: #099797;
+	color: #2a3380;
 	background-color: white;
 }
 
 /*================ END CONTACT US SECTION ==============================*/
 
 .common-bg-color {
-	background-color: #099797;
+	background-color: #5e92bd;
 	color: white;
 }
 
